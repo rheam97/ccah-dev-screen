@@ -92,8 +92,13 @@
     // function to greet form user
     const nameInput = document.getElementById("yourname");
     const log = document.getElementById("values");
+    const webpage= document.querySelector('.cell3')
     function greet(hb) {
       log.textContent = `${hb.value}, ${nameInput.value}`;
+    }
+    // hide view as webpage on browser
+    if(window.location.href==="https://rheam97.github.io/ccah-dev-screen/"){
+      webpage.style.display = "none"
     }
   </script>
 </html>
