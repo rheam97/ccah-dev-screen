@@ -1,73 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>CCAH Dev Screen</title>
     <style>
-        .wrapper{
-            width: 600px;
-            margin: auto;
-            margin-top: 200px;
-        }
-        table {
-            size: 100%
-        }
-       td{
-            font-size: 2vw;
-        }
-        .cell3{
-            text-align: center;
-            padding-top: 30px;
-        }
+      .wrapper {
+        width: 600px;
+        margin: auto;
+        margin-top: 200px;
+      }
+      table {
+        size: 100%;
+      }
+      td {
+        font-size: 2vw;
+      }
+      .cell3 {
+        text-align: center;
+        padding-top: 30px;
+      }
 
-        @media only screen and (max-width: 768px) {
-        td{
-            display: block;
-            font-size:5vw;
+      @media only screen and (max-width: 768px) {
+        td {
+          display: block;
+          font-size: 5vw;
         }
       }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-    <table>
+      <table>
         <tr>
-            <td class="cell1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut 
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</strong> in 
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <img src="https://loremflickr.com/150/150" alt="random placeholder generator"/>
-            </td>
-            <td class="cell2">
-                <form method="get">
-                <label for="yourname">What is your name?</label><br>
-                <input type="text" id="yourname" name="yourname"><br>
-                <input type="radio" id="hello" name="hb" value="Hello" onchange="greet(this)" />
-                <label for="hello">Hello</label><br />
-                <input type="radio" id="bye" name="hb" value="Bye" onchange="greet(this)" />
-                <label for="bye">Bye</label><br />
-                <button type="click" id="submit">Submit</button>
-              </form> 
-              <p id="values"></p>
-            </td>
+          <td class="cell1">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam,
+              <strong
+                >quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in
+                reprehenderit</strong
+              >
+              in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.
+            </p>
+            <img
+              src="https://loremflickr.com/150/150"
+              alt="random placeholder generator"
+            />
+          </td>
+          <td class="cell2">
+            <form method="get">
+              <label for="yourname">What is your name?</label><br />
+              <input type="text" id="yourname" name="yourname" /><br />
+              <input
+                type="radio"
+                id="hello"
+                name="hb"
+                value="Hello"
+                onchange="greet(this)"
+              />
+              <label for="hello">Hello</label><br />
+              <input
+                type="radio"
+                id="bye"
+                name="hb"
+                value="Bye"
+                onchange="greet(this)"
+              />
+              <label for="bye">Bye</label><br />
+              <button type="click" id="submit">Submit</button>
+            </form>
+            <p id="values"></p>
+          </td>
         </tr>
         <tr>
-            <td class="cell3"><a href="">View as a Webpage</a></td>
+          <td class="cell3"><a href="">View as a Webpage</a></td>
         </tr>
-    </table>
+      </table>
     </div>
-</body>
-<script> src="script.js"</script>
-<script>
-const nameInput = document.getElementById('yourname')
-const log = document.getElementById('values')
-function greet(hb){
-    log.textContent=`${hb.value}, ${nameInput.value}`
-}
-</script>
+  </body>
+  <script>
+    src = "script.js";
+  </script>
+  <script>
+    const nameInput = document.getElementById("yourname");
+    const log = document.getElementById("values");
+    function greet(hb) {
+      log.textContent = `${hb.value}, ${nameInput.value}`;
+    }
+  </script>
 </html>
