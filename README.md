@@ -53,9 +53,9 @@ Additional styling and design isn’t necessary, but feel free to add in additio
 
 ### Answer:
 
-[Code](four/index.html)
+[Code](docs/index.html)
 
-[All Files](four)
+[All Files](docs)
 
 I added a wrapper for the table to make it more mobile responsive. I also added a "view as a webpage" link in case the table doesn't render correctly in an email. I added font-size styling that is mobile-responsive and adjusts to the viewport width instead of remaining a static pixel; this allowed me to make the font-size bigger on a smaller screen size.
 
