@@ -41,10 +41,27 @@ text.textContent= 'Welcome back!'
 ```
 
 ## Question 4
+Using HTML, demonstrate your understanding of the following: Boilerplate HTML structure, internal CSS, external CSS and inline styles, HTML Tables, HTML Forms. Additional Requirements:
+
+Put all your styles in a single style tag. You also must reference an external stylesheet (it doesnt have to be real though, just make a reference).
+Create an external reference to a JS file either to a CDN or local file with a relative path.
+Create a table with a single row and two table cells. Make the table 600px wide, centered, and 200px from the top of the screen. Achieve this however you’d like.
+In the first cell, include a block of lorem ipsum text. Use inline styling to modify some or part of it.
+Also in the first cell, include a placeholder image.
+In the second cell, create a form with one text input that makes a “GET” request to your file.
+Additional styling and design isn’t necessary, but feel free to add in additional markup to make the document more accessible, and shows consideration for HTML best practices, including best practices for HTML used in an email. What is normally included in a form? What is included in a table in an HTML email?
 
 ### Answer:
 
+[Code](four/index.html)
+[All Files](four)
+
 ## EC
+Extra Credit for Above:
+
+Make the table cells stack on smaller screen widths. If you have trouble with this, alternatively you can make two divs below your table that stack on smaller screen widths.
+Include a script tag to do some sort of DOM manipulation.
+Add another field to your form with radio buttons.
 
 - 
 - 
