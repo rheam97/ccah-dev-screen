@@ -59,7 +59,6 @@ Additional styling and design isn’t necessary, but feel free to add in additio
 
 I added a wrapper for the table to make it more mobile responsive. I also added a "view as a webpage" link in case the table doesn't render correctly in an email. I added font-size styling that is mobile-responsive and adjusts to the viewport width instead of remaining a static pixel; this allowed me to make the font-size bigger on a smaller screen size.
 
-## EC
 Extra Credit for Above:
 
 Make the table cells stack on smaller screen widths. If you have trouble with this, alternatively you can make two divs below your table that stack on smaller screen widths.
