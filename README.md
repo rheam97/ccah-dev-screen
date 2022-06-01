@@ -56,7 +56,7 @@ Additional styling and design isn’t necessary, but feel free to add in additio
 [Code](four/index.html)
 
 [All Files](four)
-I added a wrapper for the table to add responsiveness. I also added a "view as a webpage" link in case the table doesn't render correctly in an email. I added font-size styling that is mobile-responsive and adjusts to the view width instead of remaining a static pixel.
+I added a wrapper for the table to add responsiveness. I also added a "view as a webpage" link in case the table doesn't render correctly in an email. I added font-size styling that is mobile-responsive and adjusts to the view width instead of remaining a static pixel; this allowed me to make the font-size bigger on a smaller screen size.
 
 ## EC
 Extra Credit for Above:
