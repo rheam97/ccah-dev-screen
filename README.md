@@ -56,7 +56,7 @@ Additional styling and design isn’t necessary, but feel free to add in additio
 [Code](four/index.html)
 
 [All Files](four)
-I added a wrapper for the table to add responsiveness. I also added a "view as a webpage" link in case the table doesn't render correctly in an email. I added font-size styling that is mobile-responsive and adjusts to the view width instead of remaining a static pixel; this allowed me to make the font-size bigger on a smaller screen size.
+I added a wrapper for the table to make it more mobile responsive. I also added a "view as a webpage" link in case the table doesn't render correctly in an email. I added font-size styling that is mobile-responsive and adjusts to the viewport width instead of remaining a static pixel; this allowed me to make the font-size bigger on a smaller screen size.
 
 ## EC
 Extra Credit for Above:
@@ -69,4 +69,4 @@ Add another field to your form with radio buttons.
 
 - I made the tables stack on smaller screens using <code>display:block</code>.
 - I added DOM manipulation by having the values of the text input and the radio buttons render upon interaction with the greetings. 
-- Added "hello" and "bye" radio buttons.
+- I added "hello" and "bye" radio buttons.
