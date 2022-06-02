@@ -5,7 +5,7 @@ You are attempting to make several visual/layout changes to a web page. If you o
 Short explanation - No code necessary
 
 ### Answer:
-You can test the changes using readily available tools such as Chrome Dev Tools to view the changes locally in the browser to see how they render on different screen sizes. You can also use unit testing with Jest in a test folder to check how your changes render on the DOM. Additionally, use can use html and css validators on platforms such as W3C. If the changes are for HTML Email, you can use tools like Email on Acid to see how your changes may render on different clients and devices: the site also has a email editor tool where you can paste your code and view the changes in real-time. There are addtional tools such as BrowserStack once the changes are merged and deployed which allows you to test how your changes render in different browsers. It's important to always check the requirements of a project and see if the changes you are making align with the aissgmnet specifications.
+You can test the changes using readily available tools such as Chrome Dev Tools to view the changes locally in the browser to see how they render on different screen sizes. You can also use unit testing with Jest in a test folder to check how your changes render on the DOM. Additionally, use can use html and css validators on platforms such as W3C. If the changes are for HTML Email, you can use tools like Email on Acid to see how your changes may render on different clients and devices: the site also has a email editor tool where you can paste your code and view the changes in real-time. There are addtional tools such as BrowserStack once the changes are merged and deployed which allows you to test how your changes render in different browsers. It's important to always check the requirements of a project and see if the changes you are making align with the assignment specifications.
 
 In general, however, it's best to test any new features and changes on a separate branch dedicated to the change prior to merging into main. 
 
@@ -64,7 +64,7 @@ Additional styling and design isn’t necessary, but feel free to add in additio
 
 I added a wrapper for the table to make it more mobile responsive. I also added a "view as a webpage" link in case the table doesn't render correctly in an email.  I also created a condition to hide the "view as a webpage" link on the deployed site. I added font-size styling that is mobile-responsive and adjusts to the viewport width instead of remaining a static pixel, and I also made the font-size bigger on a smaller screen size. I added some css hover animations and also added a dark mode toggle button that will change the whole page in addition to specifically the 'view as a webpage" link. A lot of people (myself included) prefer dark mode, so I thought it would be a user-friendly addition. 
 
-Extra Credit for Above:
+### Extra Credit for Above:
 
 Make the table cells stack on smaller screen widths. If you have trouble with this, alternatively you can make two divs below your table that stack on smaller screen widths.
 
