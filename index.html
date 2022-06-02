@@ -57,7 +57,7 @@
           <td class="cell2">
             <form method="get">
               <label for="yourname">What is your name?</label><br />
-              <input type="text" id="yourname" name="yourname" /><br />
+              <input type="text" id="yourname" name="yourname" placeholder="Your Name"/><br />
               <input
                 type="radio"
                 id="hello"
@@ -94,7 +94,7 @@
     const log = document.getElementById("values");
     const webpage= document.querySelector(".cell3")
     function greet(hb) {
-      log.textContent = `${hb.value}, ${nameInput.value}`;
+      log.textContent = `${hb.value} ${nameInput.value}!`;
     }
     // hide view as webpage on browser
     if(window.location.href==="https://rheam97.github.io/ccah-dev-screen/"){
