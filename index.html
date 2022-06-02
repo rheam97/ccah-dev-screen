@@ -101,14 +101,11 @@
 
     function greet(e){
       e.preventDefault()
-      const values = Array.from(form).reduce((acc, input)=> ({
-        ...acc,
-        [input.name]: input.value
-      }), {})
+      const value = Array.from(form).find(input=> input.name==='yourname').value
       const radio = Array.from(document.getElementsByName('hb')).find(r=> r.checked).value
       formCell.innerHTML=""
       const greeting = document.createElement('p')
-      greeting.textContent= ` ${radio} ${values.yourname}!`
+      greeting.textContent= ` ${radio} ${value}!`
       formCell.appendChild(greeting)
     }
     button.addEventListener('click', greet)
