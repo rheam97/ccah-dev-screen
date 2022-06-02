@@ -132,9 +132,10 @@
       ).value;
       formCell.innerHTML = "";
       const greeting = document.createElement("h1");
-      greeting.textContent = ` ${radio} ${value}!`;
+      greeting.textContent = `${radio} ${value}!`;
       formCell.appendChild(greeting);
     }
+
     // toggle dark mode class on button click
     function dark(e) {
       var element = document.body;
@@ -143,6 +144,7 @@
     }
     submit.addEventListener("click", greet);
     darkBtn.addEventListener("click", dark);
+
     // hide view as webpage on browser
     if (window.location.href === "https://rheam97.github.io/ccah-dev-screen/") {
       webpage.style.display = "none";
