@@ -62,7 +62,7 @@ Additional styling and design isn’t necessary, but feel free to add in additio
 [Code](index.html)
 
 
-I added a wrapper for the table to make it more mobile responsive. I also added a "view as a webpage" link in case the table doesn't render correctly in an email.  I also created a condition to hide the "view as a webpage" link on the deployed site. I added font-size styling that is mobile-responsive and adjusts to the viewport width instead of remaining a static pixel, and I also made the font-size bigger on a smaller screen size. I added some css hover animations and also added a dark mode toggle button that will change the whole page in addition to specifically the 'view as a webpage" link. A lot of people (myself inluded) prefer dark mode, so I thought it would be a user-friendly addition. 
+I added a wrapper for the table to make it more mobile responsive. I also added a "view as a webpage" link in case the table doesn't render correctly in an email.  I also created a condition to hide the "view as a webpage" link on the deployed site. I added font-size styling that is mobile-responsive and adjusts to the viewport width instead of remaining a static pixel, and I also made the font-size bigger on a smaller screen size. I added some css hover animations and also added a dark mode toggle button that will change the whole page in addition to specifically the 'view as a webpage" link. A lot of people (myself included) prefer dark mode, so I thought it would be a user-friendly addition. 
 
 Extra Credit for Above:
 
