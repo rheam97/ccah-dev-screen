@@ -29,7 +29,7 @@ You can place JavaScript code in a script tag on the page what front end code wo
 Provide a code snippet - This snippet must change the text when tested. Placeholders showing that you would change the text here or what you could do to accomplish this are disqualifying.
 
 ### Answer:
-I tried to make this more scalable, although I wasn't sure if I should anticiapte the value of 'returning' belonging to a different key other than 'content'. 
+I tried to make this scalable, although I wasn't sure if I should anticipate the value of 'returning' belonging to a different key other than 'content'. 
 
 [Code](three.js)
 
@@ -62,7 +62,7 @@ Additional styling and design isn’t necessary, but feel free to add in additio
 [Code](index.html)
 
 
-I added a wrapper for the table to make it more mobile responsive. I also added a "view as a webpage" link in case the table doesn't render correctly in an email.  I also created a condition to hide the "view as a webpage" link on the deployed site. I added font-size styling that is mobile-responsive and adjusts to the viewport width instead of remaining a static pixel, and I also made the font-size bigger on a smaller screen size. I added some css hover animations and also added a dark mode toggle button that will change the whole page in addition to specifcally the 'view as a webpage link"
+I added a wrapper for the table to make it more mobile responsive. I also added a "view as a webpage" link in case the table doesn't render correctly in an email.  I also created a condition to hide the "view as a webpage" link on the deployed site. I added font-size styling that is mobile-responsive and adjusts to the viewport width instead of remaining a static pixel, and I also made the font-size bigger on a smaller screen size. I added some css hover animations and also added a dark mode toggle button that will change the whole page in addition to specifically the 'view as a webpage" link. A lot of people (myself inluded) prefer dark mode, so I thought it would be a user-friendly addition. 
 
 Extra Credit for Above:
 
