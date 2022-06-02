@@ -29,17 +29,20 @@ You can place JavaScript code in a script tag on the page what front end code wo
 Provide a code snippet - This snippet must change the text when tested. Placeholders showing that you would change the text here or what you could do to accomplish this are disqualifying.
 
 ### Answer:
+I tried to make this more scalable, although I wasn't sure if I should anticiapte the value of 'returning' belonging to a different key other than 'content'. 
 
 [Code](three.js)
 
 ```
 const url = window.location.href.split('?')[1]
 const usp = new URLSearchParams(url)
-const content = usp.get('content')
 const text= document.querySelector('p')
-if(content=== 'returning'){
-text.textContent= 'Welcome back!'
-}
+
+usp.forEach(function(value) {
+    if(value=== 'returning'){
+        text.textContent= 'Welcome back!'
+        }
+  });
 
 ```
 
