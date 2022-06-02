@@ -18,11 +18,40 @@
       td {
         font-size: 2vw;
       }
+      td:hover {
+        color:rgb(147, 20, 211);
+      }
+      .cell1, .cell2 {
+        width: 300px
+      }
+      img {
+        transition: all 1s ease-in-out
+      }
+      img:hover {
+        transform: scale(1.3);
+      }
       .cell3 {
         text-align: center;
-        padding-top: 30px;
+        padding-top: 3vw;
       }
-
+      a {
+        text-decoration: none;
+      }
+      #dm {
+        margin-left:50%;
+        background: rgb(223, 213, 213);
+        color: black
+      }
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
+      .whiteText {
+        color: white
+      }
+      .whiteText:hover {
+        text-decoration: underline;
+      }
       @media only screen and (max-width: 768px) {
         td {
           display: block;
@@ -35,16 +64,19 @@
     <div class="wrapper">
       <table>
         <tr>
+          <td class = "cell"> 
+            <button id="dm">Toggle Dark Mode</button>
+          </td>
+        </tr>
+        <tr>
           <td class="cell1">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam,
-              <strong
-                >quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                 commodo consequat. Duis aute irure dolor in
-                reprehenderit</strong
-              >
+                reprehenderit</strong>
               in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
               officia deserunt mollit anim id est laborum.
@@ -63,19 +95,9 @@
                 name="yourname"
                 placeholder="Your Name"
               /><br />
-              <input
-                type="radio"
-                id="hello"
-                name="hb"
-                value="Hello"
-              />
+              <input type="radio" id="hello" name="hb" value="Hello" />
               <label for="hello">Hello</label><br />
-              <input
-                type="radio"
-                id="bye"
-                name="hb"
-                value="Bye"
-              />
+              <input type="radio" id="bye" name="hb" value="Bye" />
               <label for="bye">Bye</label><br />
               <button type="click" id="submit">Submit</button>
             </form>
@@ -93,24 +115,34 @@
   </body>
   <script src="script.js"></script>
   <script>
-    // function to greet form user
-    const formCell=document.querySelector('.cell2')
-    const form=document.querySelector('form')
+    const formCell = document.querySelector(".cell2");
+    const form = document.querySelector("form");
     const webpage = document.querySelector(".cell3");
-    const button= document.querySelector('button')
+    const submit = document.querySelector("#submit");
+    const darkBtn = document.querySelector("#dm");
 
-    function greet(e){
-      e.preventDefault()
-      const value = Array.from(form).find(input=> input.name==='yourname').value
-      const radio = Array.from(document.getElementsByName('hb')).find(r=> r.checked).value
-      formCell.innerHTML=""
-      const greeting = document.createElement('p')
-      greeting.textContent= ` ${radio} ${value}!`
-      formCell.appendChild(greeting)
+    // function to greet form user
+    function greet(e) {
+      e.preventDefault();
+      const value = Array.from(form).find(
+        (input) => input.name === "yourname"
+      ).value;
+      const radio = Array.from(document.getElementsByName("hb")).find(
+        (r) => r.checked
+      ).value;
+      formCell.innerHTML = "";
+      const greeting = document.createElement("h1");
+      greeting.textContent = ` ${radio} ${value}!`;
+      formCell.appendChild(greeting);
     }
-    button.addEventListener('click', greet)
-
-
+    // toggle dark mode class on button click
+    function dark(e) {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+      document.querySelector('a').classList.toggle("whiteText")
+    }
+    submit.addEventListener("click", greet);
+    darkBtn.addEventListener("click", dark);
     // hide view as webpage on browser
     if (window.location.href === "https://rheam97.github.io/ccah-dev-screen/") {
       webpage.style.display = "none";
