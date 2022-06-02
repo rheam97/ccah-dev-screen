@@ -5,7 +5,7 @@ You are attempting to make several visual/layout changes to a web page. If you o
 Short explanation - No code necessary
 
 ### Answer:
-You can test the changes using readily available tools such as Chrome Dev Tools to view the changes locally in the browser to see how they render on different screen sizes. You can also use unit testing with Jest in a test folder to check how your changes render on the DOM. Additionally, use can use html and css validators on platforms such as W3C. If the changes are for HTML Email, you can use tools like Email on Acid to see how your changes may render on different clients and devices: the site also has a email editor tool where you can paste your code and view the changes in real-time. There are addtional tools such as BrowserStack once the changes are merged and deployed which allows you to test how your changes render in different browsers. 
+You can test the changes using readily available tools such as Chrome Dev Tools to view the changes locally in the browser to see how they render on different screen sizes. You can also use unit testing with Jest in a test folder to check how your changes render on the DOM. Additionally, use can use html and css validators on platforms such as W3C. If the changes are for HTML Email, you can use tools like Email on Acid to see how your changes may render on different clients and devices: the site also has a email editor tool where you can paste your code and view the changes in real-time. There are addtional tools such as BrowserStack once the changes are merged and deployed which allows you to test how your changes render in different browsers. It's important to always check the requirements of a project and see if the changes you are making align with the aissgmnet specifications.
 
 In general, however, it's best to test any new features and changes on a separate branch dedicated to the change prior to merging into main. 
 
@@ -56,7 +56,7 @@ Additional styling and design isn’t necessary, but feel free to add in additio
 [Code](index.html)
 
 
-I added a wrapper for the table to make it more mobile responsive. I also added a "view as a webpage" link in case the table doesn't render correctly in an email.  I also created a condition to hide the "view as a webpage" link on the deployed site. I added font-size styling that is mobile-responsive and adjusts to the viewport width instead of remaining a static pixel, and I also made the font-size bigger on a smaller screen size.
+I added a wrapper for the table to make it more mobile responsive. I also added a "view as a webpage" link in case the table doesn't render correctly in an email.  I also created a condition to hide the "view as a webpage" link on the deployed site. I added font-size styling that is mobile-responsive and adjusts to the viewport width instead of remaining a static pixel, and I also made the font-size bigger on a smaller screen size. I added some css hover animations and also added a dark mode toggle button that will change the whole page in addition to specifcally the 'view as a webpage link"
 
 Extra Credit for Above:
 
@@ -67,5 +67,5 @@ Include a script tag to do some sort of DOM manipulation.
 Add another field to your form with radio buttons.
 
 - I made the tables stack on smaller screens using <code>display:block</code>.
-- I added DOM manipulation by having the values of the text input and the radio buttons render upon interaction with the greetings. 
+- I added DOM manipulation by having the values of the text input and the checked radio button render in the table cell upon form submission.
 - I added "hello" and "bye" radio buttons.
